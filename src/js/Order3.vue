@@ -64,12 +64,10 @@ export default {
     methods:{
         getGameName(name){
             this.get_name=name;
-            console.log(this.get_name)
         },
         swiperToggle(){
             this.game_name=event.currentTarget.dataset.game;
             $(event.currentTarget).addClass('active').siblings().removeClass('active')
-            console.log(this.game_name)
         },
     },
     data(){

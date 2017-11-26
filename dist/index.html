@@ -22,18 +22,20 @@
                 </template>
             </ul>
         </div>
-        <Lottera v-if="game_name == 'Lottera'"></Lottera>
-        <Lotterb v-if="game_name == 'Lotterb'"></Lotterb>
-        <Happy10mina v-if="game_name == 'Happy10mina'"></Happy10mina>
-        <Happy10minb v-if="game_name == 'Happy10minb'"></Happy10minb>
-        <Happy10minc v-if="game_name == 'Happy10minc'"></Happy10minc>
-        <Happy10mind v-if="game_name == 'Happy10mind'"></Happy10mind>
-        <Pk10 v-if="game_name == 'Pk10'"></Pk10>
-        <Lukyairship v-if="game_name == 'LukyAirShip'"></Lukyairship>
-        <Elevenlist v-if="game_name == 'ElevenList'"></Elevenlist>
-        <Order3 v-if="game_name == 'Order3'"></Order3>
-        <Fu3d v-if="game_name == 'Fu3d'"></Fu3d>
-        <Shanghai v-if="game_name == 'Shanghai'"></Shanghai>
+        <keep-alive>
+            <Lottera v-if="game_name == 'Lottera'"></Lottera>
+            <Lotterb v-if="game_name == 'Lotterb'"></Lotterb>
+            <Happy10mina v-if="game_name == 'Happy10mina'"></Happy10mina>
+            <Happy10minb v-if="game_name == 'Happy10minb'"></Happy10minb>
+            <Happy10minc v-if="game_name == 'Happy10minc'"></Happy10minc>
+            <Happy10mind v-if="game_name == 'Happy10mind'"></Happy10mind>
+            <Pk10 v-if="game_name == 'Pk10'"></Pk10>
+            <Lukyairship v-if="game_name == 'LukyAirShip'"></Lukyairship>
+            <Elevenlist v-if="game_name == 'ElevenList'"></Elevenlist>
+            <Order3 v-if="game_name == 'Order3'"></Order3>
+            <Fu3d v-if="game_name == 'Fu3d'"></Fu3d>
+            <Shanghai v-if="game_name == 'Shanghai'"></Shanghai>
+        </keep-alive>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

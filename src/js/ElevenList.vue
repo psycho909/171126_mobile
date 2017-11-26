@@ -36,7 +36,6 @@ export default {
     methods:{
         getGameName(name){
             this.get_name=name;
-            console.log(this.get_name)
         },
     },
     data(){
