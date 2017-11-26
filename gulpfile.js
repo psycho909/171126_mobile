@@ -8,6 +8,8 @@ var sourcemaps = require('gulp-sourcemaps');
 // js
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var buffer=require('vinyl-buffer');
+var uglify=require('gulp-uglify');
 
 gulp.task('server', ['sass','build'], function() {
     browserSync.init({
@@ -43,6 +45,8 @@ gulp.task('build', function () {
 		})
 		.pipe(plumber())
 		.pipe(source('./dist/js/app.js'))
+		.pipe(buffer())
+		.pipe(uglify())
 		.pipe(gulp.dest('./'))
 		.pipe(browserSync.reload({
 			stream:true
